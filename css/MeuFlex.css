@@ -1,0 +1,40 @@
+.flex-container {
+    /* Definindo display flex */
+    display: flex;
+
+    /* Colocando conteúdo de flex-container alinhado em linha, lado a lado */
+    flex-direction: row;
+
+    /* Caso minha linha quebre e tenha mais elementos, ele quebra junto com a linhae começa na linha de baixo */
+    flex-wrap: wrap;
+
+    /* Exibe os itens flexíveis com espaço antes, entre e depois das linhas */
+    justify-content: space-around;
+
+    /* Alinhando os intens no centro (forma vertifcal) */
+    align-items: center;
+
+    /* Cor */
+    background-color: blueviolet;
+
+    /* Tamanho */
+    width: 50%;
+    height: 250px;
+}
+
+.flex-container>div{
+    /* cores */
+    background-color: white;
+    color: blueviolet;
+
+    /* Tamanho do elemento */
+    width: 40px;
+    height: 40px; 
+    margin: 10px 0px 10px 10px;
+    padding: 20px;
+    
+    /* propriedades de fonte do elemento */
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+}

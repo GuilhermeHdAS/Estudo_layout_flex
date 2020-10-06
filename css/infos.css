@@ -1,0 +1,106 @@
+@font-face {
+    font-family: ExtraLight;
+    src: url("../fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: Light;
+    src: url("../fonts/IBM_Plex_Sans/IBMPlexSans-Light.ttf");
+}
+
+@font-face {
+    font-family: Medio;
+    src: url("../fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: RegularFont;
+    src: url("../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: SemiNegrito;
+    src: url("../fonts/IBM_Plex_Sans/IBMPlexSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Negrito;
+    src: url("../fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf");
+}
+
+body {
+    /* Setando a font a ser usada */
+    font-family: Light;
+    color: white;
+    
+    background-color: black;
+    background-image: url("https://cdn.pixabay.com/photo/2014/04/04/14/56/background-313415_960_720.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+h1 {
+    font-family: Medio;
+    text-align: center;
+}
+
+.flex-container {
+    /* Possibilitando o uso de flexbox */
+    display: flex;
+    /* Colocando o conteúdo para ser monstrado por linhas */
+    flex-direction: row;
+    /* Caso seja preciso, quebrar a linha para tudo ficar dentro de uma página */
+    flex-wrap: wrap;
+    /* Alinhando os itens no centro do container (horizontalmente) */
+    justify-content: space-around;
+    /* Alinhando os itens no início do container (verticalmente) */
+    align-items: flex-start;
+}
+
+.flex-container>div {
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    
+    width: 280px;
+    height: 450px;
+    margin-bottom: 50px;
+}
+
+.flex-container>div>img {
+    width: 280px;
+    height: 200px;
+}
+
+.flex-container>div>h4 {
+    padding-left: 10px;
+    font-family: SemiNegrito;
+}
+
+.flex-container>div>ul {
+    width: 260px;
+    padding-left: 10px;
+}
+
+.flex-container>div>ul>li {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+p {
+    text-align: center;
+    font-size: 13px;
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 15px;
+}
+
+a:visited {
+    text-decoration: none;
+}
